@@ -1,0 +1,143 @@
+    html {
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      margin: 0 0 0 0;
+      display: inline-flex;
+    }
+
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0 0 0 0;
+      display: inline-flex;
+      background-color: #ededed;
+	  flex-direction: column;
+      justify-content: center;
+    }
+
+
+    meni {
+      display: inline-flex;
+      min-width: 350px;
+      flex-direction: column;
+      padding: 0;
+      background-color: hsla(0, 0%, 100%, 0.4);
+      height: 500px;
+    }
+
+    vsebina {
+      display: inline-flex;
+      width: 96%;
+      flex-direction: column;
+      padding: 0;
+      margin: 40px;
+      z-index: 0;
+    }
+
+    .opt {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #f14e40;
+      color: white;
+      min-height: 40px;
+      font-size: 26px;
+    }
+
+    .cnt {
+      display: inline-flex;
+      padding: 10px;
+      margin: 0;
+      background-color: white;
+
+    }
+
+    .emp {
+      margin-bottom: 4px;
+    }
+
+    .empX {
+      margin-right: var(--s);
+    }
+
+    .box {
+      display: inline-flex;
+      min-width: 350px;
+      flex-direction: column;
+      padding: 0;
+      background-color: hsla(0, 0%, 100%, 0.4);
+    }
+
+    .key {
+      display: inline-block;
+      padding: 8px;
+      background-color: #f14e40;
+      color: white;
+      height: 24px;
+      min-width: 24px;
+      font-size: 18px;
+      text-align: left;
+      text-shadow: -1px 0px 0px #0080e3;
+    }
+
+
+
+    .square {
+      display: inline-block;
+      min-width: 60px;
+      min-height: 60px;
+      max-width: 60px;
+      max-height: 60px;
+    }
+
+    .rect {
+      min-width: 28px;
+      max-width: 28px;
+      box-shadow: 0px 2px 5px grey;
+    }
+
+    .holder {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .text {
+      display: inline-block;
+      width: 100%;
+      text-align: left;
+      text-shadow: -1px 0px 0px #0080e3;
+    }
+
+    .inputText {
+      margin: 0 6px;
+      padding: 4px 12px;
+      width: 100%;
+    }
+
+
+
+	.blue_button {
+	  border: none;
+	  display: inline-block;
+      padding: 8px;
+      background-color: #f14e40;
+      color: white;
+      font-size: 18px;
+      text-align: center;
+      text-shadow: -1px 0px 0px #0080e3;
+	}
+
+
+
+	.postopek_opis {
+		word-wrap: break-word;      /* IE 5.5-7 */
+      white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+      white-space: pre-wrap;
+	}
+
+  .druga{
+    background-color: #f14e40 ;
+  }
+  .tretja{
+    background-color: #f14e40 ;
+  }

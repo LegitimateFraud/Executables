@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <script src="Podatki.js"></script>
+  <link rel="stylesheet" href="oblika.css">
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <title>Executables</title>
+</head>
+
+<body onload="main()">
+
+  <div type="button" onClick="startF()">
+    Reset
+  </div>
+
+  <!-- ZAČETEK: Vsebina aplikacije -->
+
+  <!-- Z: Vsebina Zato, da je poravnano na sredino -->
+	<div style="display: inline-flex; flex-direction: raw; justify-content: center; padding: 0; width: 100%; height: 80%;">
+
+        <!-- Z: EHR -->
+        <div class="box" style="height: 100%; margin-right: 64px">
+          <div class="cnt" style="padding: 0;">
+            <div class="square" style="background-color: #cd2b2a;"></div>
+            <div class="opt text">My Fridge</div>
+          </div>
+
+          <div class="cnt emp">
+            <div style="width:20%;">ID</div>
+            <div style="width: 100%; text-align: right;" id="ehrId_holder">1283823612</div>
+          </div>
+
+		  <!-- Scroll bar -->
+			<div class="emp" style="display: inline-flex; flex-direction: column; height: 100%; overflow: auto">
+				<div id="hladilnik_polje_id" style="display: inline-flex; flex-direction: column">
+
+          <div id="Hladilnik" style="display: inline-flex; flex-direction: column">
+
+
+          </div>
+
+				</div>
+
+				<div class="cnt emp" style="padding: 0; height: 100%"></div>
+
+
+			</div>
+
+      <div class="cnt emp" style="padding:0; height: 40px;">
+                  <div style="width:20%; background-color: #6fa832;"></div>
+                  <div style="width: 100%; text-align: right; padding: 8px;" id="ehrId_holder">Fresh</div>
+              </div>
+              <div class="cnt emp" style="padding:0; height: 40px;">
+                  <div style="width:20%; background-color: #F8B307;"></div>
+                  <div style="width: 100%; text-align: right; padding: 8px;" id="ehrId_holder">Nearly Expired (3 Days Left)</div>
+              </div>
+              <div class="cnt emp" style="padding:0; height: 40px;">
+                  <div style="width:20%; background-color: #E04837;"></div>
+                  <div style="width: 100%; text-align: right; padding: 8px;" id="ehrId_holder">Expired</div>
+              </div>
+			<!-- End of scroll bar -->
+
+			<!-- Začetek menija z gumbi -->
+			<div class="cnt" style="flex-direction: row; padding: 0; width: 100%; min-height: 40px; max-height: 40px;">
+				<a href="recepti.html" onClick="" class="blue_button" style="text-decoration: none; width: 100%; margin-right: 4px">I Want To EAT</a>
+				<button type="button" onClick="updateFridge(true)" class="blue_button" style="width: 100%;">Update My Fridge</button>
+
+			</div>
+			<!-- Konec menija z gumbi -->
+
+        </div>
+        <!-- K: EHR -->
+
+
+        <!-- Z: Shopping list -->
+        <div class="box" style="height: 100%;">
+          <div class="cnt" style="padding: 0;">
+            <div class="square" style="background-color: #cd2b2a;"></div>
+            <div class="opt text">Shopping List</div>
+          </div>
+
+          <div class="cnt emp" style="heigh: 38px">
+          </div>
+
+		 <!-- Scroll bar -->
+			<div  class="emp" style="display: inline-flex; flex-direction: column; height: 96%; overflow: auto">
+
+				<div id="nakupovalni_listek_polje_id" style="display: inline-flex; flex-direction: column">
+
+
+				</div>
+
+
+			  <div class="cnt" style="padding: 0; height: 100%"></div>
+
+
+
+			</div>
+			<!-- End of scroll bar -->
+
+
+
+			<!-- Začetek vnos sestavin -->
+
+
+
+			<!-- Konec vnos sestavin -->
+
+
+			<!-- Začetek menija z gumbi -->
+			<div class="cnt" style="flex-direction: row; padding: 0; width: 100%; min-height: 40px; max-height: 40px;">
+        <a type="button" href="onlineBuy.html" class="blue_button" style="width: 100%; text-decoration: none;">Buy Online</a>
+        			</div>
+			<!-- Konec menija z gumbi -->
+
+        </div>
+        <!-- K: EHR -->
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+  <!-- K: -->
+
+  <!-- KONEC: Vsebina aplikacije -->
+
+</body>
+
+</html>

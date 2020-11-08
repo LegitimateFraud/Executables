@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <script src="recepti.js"></script>
+  <link rel="stylesheet" href="oblika.css">
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <title>Executables</title>
+
+</head>
+
+<body onload="main()">
+
+  <!-- ZAČETEK: Vsebina aplikacije -->
+
+  <!-- Z: Vsebina Zato, da je poravnano na sredino -->
+	<div style="display: inline-flex; flex-direction: row; justify-content: center; padding: 0; width: 100%; height: 80%;">
+
+        <!-- Z: EHR -->
+        <div class="box" style="height: 100%; margin-right: 16px">
+          <div class="cnt" style="padding: 0;">
+            <div class="square" style="background-color: #cd2b2a"></div>
+            <div class="druga opt text">Recipes</div>
+          </div>
+
+          <div class="cnt">
+          </div>
+
+		  <!-- Recepti button -->
+		  <div class="cnt" style="padding: 0;">
+            <div class="cnt" style="padding:0; width:100%;">
+              <input type="text" placeholder="Recept" class="inputText" id="search">
+            </div>
+			<button  type="button" onClick="getSearchResult()" class="druga blue_button" style="min-width: 96px;">Search</button>
+          </div>
+		  <!-- Recepti button -->
+
+		  <div class="cnt emp">
+          </div>
+
+		  <!-- Scroll bar -->
+			<div id="najdeni_recepti_polje_id" class="emp" style="display: inline-flex; flex-direction: column; height: 100%; overflow: auto">
+
+        <div id="recepti" style="display: inline-flex; flex-direction: column">
+        </div>
+
+
+			  <div class="cnt" style="padding: 0; height: 100%"></div>
+
+			</div>
+			<!-- End of scroll bar -->
+
+			<div class="cnt" style="padding: 0; min-height: 40px; max-height: 40px;">
+			  </div>
+
+        </div>
+        <!-- K: EHR -->
+
+        <!-- Z: EHR -->
+        <div class="box" style="height: 100%; max-width: 20%">
+          <div class="cnt" style="padding: 0;">
+            <div class="square" style="background-color: #cd2b2a;"></div>
+            <div class="druga opt text" id="selectedRecipe"></div>
+          </div>
+
+          <div class="cnt emp" style="heigh: 38px">
+          </div>
+
+		  <div class="cnt emp">
+            <div style="width:100%; height: 20px; text-align: center;"><b>INGREDIENTS</b></div>
+          </div>
+
+		 <!-- Scroll bar -->
+			<div   class="emp" style="display: inline-flex; flex-direction: column; height: 50%; overflow: auto; margin-bottom: 8px;">
+			 <div id="sestavine_polje_id" style="display: inline-flex; flex-direction: column">
+
+         <div id="sestavine" style="display: inline-flex; flex-direction: column"></div>
+
+
+
+
+			 </div>
+
+
+			  <div class="cnt" style="padding: 0; height: 100%"></div>
+
+			</div>
+			<!-- End of scroll bar -->
+
+
+
+			<!-- Začetek opisa postopa -->
+			<div class="cnt emp" style="flex-direction: column; padding: 0; height: 46%;">
+				<div class="cnt emp">
+					<div style="width:100%; height: 20px; text-align: center;"><b>INSTRUCTIONS</b></div>
+				</div>
+				<div id="postopek_polje_id" class="postopek_opis" style="display: inline-box;color: #404040; overflow: auto; padding: 8px;">
+          Instructions will show up after you choose your recipe!
+        </div>
+			</div>
+
+
+
+			<!-- Konec opisa postopa -->
+
+
+			<!-- Začetek menija z gumbi -->
+			<div class="cnt" style="flex-direction: row; padding: 0; width: 100%; min-height: 40px; max-height: 40px;">
+				<a type="button" href="index.html" class="druga blue_button" style="width: 30%; text-decoration: none; margin-right:4px;">Fridge</a>
+        <button type="button" onclick="addElementToSL()" class="druga blue_button" style="width: 70%; text-decoration: none; ">Add to Shopping list</button>
+
+			</div>
+			<!-- Konec menija z gumbi -->
+
+        </div>
+        <!-- K: EHR -->
+
+	</div>
+
+  <!-- K: -->
+
+  <!-- KONEC: Vsebina aplikacije -->
+
+</body>
+
+</html>
